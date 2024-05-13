@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = postAdapter
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://www.reddit.com/")
+            .baseUrl("https://www.reddit.com/top/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
